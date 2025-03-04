@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "outDir": "./dist",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "types": ["jest"],
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
+        "rewriteRelativeImportExtensions": true,
+        "noEmit": true
+    },
+    "include": ["src/**/*", "tests/**/*"]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "the-shortest-url-pirdrm",
+  "version": "1.0.0",
+  "description": "Your assignment is to implement a URL shortening service using Node.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc --project tsconfig.build.json",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "transform": {
+      "^.+\\.tsx?$": [
+        "ts-jest",
+        {
+          "useESM": true
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://finn-gmbh-bfjjzl@git.codesubmit.io/finn-gmbh/the-shortest-url-pirdrm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "nanoid": "^5.1.2",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nanoid": "^5.1.2"
+  }
+}
